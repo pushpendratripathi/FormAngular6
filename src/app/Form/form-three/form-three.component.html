@@ -1,0 +1,119 @@
+
+  <div class="container">
+      <div class="row">
+            <div class="col-md-12">
+       <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="container">  
+        <div class="col-md-6 floatleft">
+
+                <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" formControlName="Name" class="form-control" />
+                   </div>
+
+                   <div class="form-group">
+                      <label>Mobile Number</label>
+                      <input type="tel" formControlName="mobile_no" class="form-control" />
+                      
+                  </div>
+
+                  <div class="form-group">
+                      <label>Date of Birth</label>
+                      <input type="date" formControlName="dateofbirth" class="form-control" />
+                      
+                  </div>
+
+
+                  <div class="form-group">
+                      <label>Birthplace</label>
+                      <input type="text" formControlName="birthplace" class="form-control" />
+                      
+                  </div>
+        
+        <div class="form-group">
+            <label>Fluent Languages</label>
+            <select class="form-control">
+                <option>spoken</option>
+                <option>literate</option>
+                </select>
+            
+        </div>
+
+
+        <div class="form-group">
+            <label>Prefer to be called</label>
+            <input type="text" formControlName="Prefer_called" class="form-control" />
+         </div>
+
+         <div class="form-group">
+            <label>Please list all states & countries in which you’ve lived since age 18</label>
+           
+            
+            <select class="form-control">
+                    <option>18</option>
+                    <option>27</option>
+                    </select>
+               </div>
+
+
+
+
+
+                </div> 
+
+
+
+                <div class="col-md-6 floatleft">
+                        <div class="form-group">
+                                <label>Diagnosed disorders, conditions, and syndromes</label>
+                                <input type="text" formControlName="conditions" class="form-control" />
+                               
+                            </div>
+          
+                            
+                            <div class="form-group">
+                                <label>Highest Level of education completed:</label>
+                                <input type="text" formControlName="edu_completed" class="form-control" />
+                               
+                            </div>
+        
+        
+          
+                            <div class="form-group">
+                                    <label>Name of Company/Employer</label>
+                                    <input type="text" formControlName="name_company" class="form-control" />
+                                    </div>
+        
+                                    <div class="form-group">
+                                            <label>Job Title</label>
+                                            <input type="text" formControlName="job_title" class="form-control" />
+                                        </div>
+        
+        
+                                        
+                                    <div class="form-group">
+                                            <label>Annual Income</label>
+                                            <input type="text" formControlName="annual_income" class="form-control" />
+                                        </div>
+        
+                                        <div class="form-group">
+                                                <label>Have you declared bankruptcy?</label>
+                                                <input type="text" formControlName="bankruptcy" class="form-control" />
+                                            </div>
+        
+                                            <div class="form-group">
+                                                    <label>Month and year was it discharged:</label>
+                                                    <input type="text" formControlName="discharged" class="form-control" />
+                                                </div>
+        
+
+
+                    </div> 
+
+
+            </div>
+         </form>
+             
+   </div>
+  </div>
+</div>
