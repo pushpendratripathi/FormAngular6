@@ -1,0 +1,66 @@
+
+<div id="accordion">
+  <div class="card">
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+        WACAP APPLICATION
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+      <div class="card-body">
+        <app-form-one></app-form-one> 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+          APPLICANT 1: PERSONAL BACKGROUND & EMPLOYMENT INFORMATION
+    </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        <app-form-two></app-form-two>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          APPLICANT 2: PERSONAL BACKGROUND & EMPLOYMENT INFORMATION
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+      <app-form-three></app-form-three>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+            ALL CHILDREN CURRENTLY LIVING IN THE HOME
+        </a>
+      </div>
+      <div id="collapseFour" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <app-form-four></app-form-four>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
